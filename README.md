@@ -1,4 +1,4 @@
-# Projeto de Encurtador de Link Usando Python
+# Encurtador de Link Usando Python
 
 Este projeto é um encurtador de URL desenvolvido em Python. Ele utiliza a biblioteca pyshorteners para encurtar URLs e as bibliotecas customtkinter e tkinter para a interface gráfica do usuário.
 
