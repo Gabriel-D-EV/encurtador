@@ -2,15 +2,17 @@ import pyshorteners as sh
 import customtkinter as custom
 from tkinter import messagebox
 import webbrowser
-import tkinter as tk
 
 app = custom.CTk()
-app.geometry("300x120")
+app.geometry("300x160")
 app.iconbitmap("favicon.ico")
 app.title("ENCURTADOR DE LINK")
 
 texto = custom.CTkLabel(app, text="Link: ")
 texto.place(x=10, y=15)
+
+texto2 = custom.CTkLabel(app, text="Link gerado e já copiado: ")
+texto2.place(x=80, y=110)
 
 urll = custom.CTkEntry(app, placeholder_text="Link longo", width=240)
 urll.place(x=55, y=15)
@@ -31,15 +33,10 @@ def click ():
             def callback(url):
                 webbrowser.open(url)
                 
-            app = tk.Tk()
-            app.title("Link curto")
-            app.geometry("200x70")
-            app.iconbitmap('favicon.ico')
             
-            short = tk.Label(app, text=surl, fg="blue", cursor="hand2")
-            short.pack()
-            short.bind("<Button-1>", lambda e: callback(url))
-            short.place(x=10, y=10)           
+            
+            short = custom.CTkLabel(app, text=surl)
+            short.place(x=160, y=110)           
             
             ctrlC(surl)
     
