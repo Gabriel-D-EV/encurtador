@@ -9,4 +9,4 @@ Além disso, este projeto tem a funcionalidade adicional de copiar automaticamen
 
  <img src="https://github.com/Gabriel-D-EV/encurtador/blob/main/encurtador.png?raw=true" width="60%" height="auto">
 
- Tecnologias usadas: pyshorteners, customtkinter, tkinter, webbrowser
+ Tecnologias usadas: pyshorteners, customtkinter, webbrowser
